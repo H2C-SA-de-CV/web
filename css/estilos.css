@@ -153,6 +153,11 @@ html {
 }
 #sobrenosotros .sobrenosotros h2 span {
   color: brown;
+
+}
+#sobrenosotros .sobrenosotros p span {
+  color: brown;
+  font-weight: bold;
 }
 #sobrenosotros .sobrenosotros h3 {
   font-size: 18px;
@@ -241,6 +246,10 @@ html {
 #servicios .fila .servicio p {
   font-size: 14px;
   line-height: 22px;
+}
+.texto-justificado{
+  padding-top: 10px;
+  text-align: justify;
 }
 /* SECCION DE HABILIDADES */
 .contenedor-skills {
