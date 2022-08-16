@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -12,7 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/estilos.css" />
-    <title>H2C</title>
+    <title>H2C S.A. de C.V.</title>
   </head>
   <body>
     <!-- SECCION INICIO -->
@@ -20,7 +20,10 @@
       <div class="contenido">
         <header>
           <div class="contenido-header">
-            <h1>H2C</h1>
+            <div class="logo">
+              <img src="/images/H2C_HR.png" alt="H2C S.A. de C.V.">
+            </div>
+            
             <nav id="nav" class="">
               <ul id="links">
                 <li><a href="#inicio" class="seleccionado">INICIO</a></li>
@@ -32,7 +35,7 @@
               </ul>
             </nav>
             <!-- Iconos  del menu responsive -->
-            <div id="icono-nav">
+            <div id="icono-nav" onclick="responsiveMenu()" >
               <i class="fa-solid fa-bars"></i>
             </div>
             <!-- Iconos de las redes sociales -->
@@ -81,112 +84,126 @@
       </div>
     </section>
     <!-- SECCION SERVICIOS -->
-    <section id="servicios">
-      <h2 class="titulo-seccion">NUESTRAS SOLUCIONES</h2>
-      <div class="fila">
-        <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-code"></i></span>
-          <h4>STATUS BUSINESS</h4>
-          <hr />
-          <ul class="servicio-tag">
-            <li>Finaciero</li>
-            <li>Comercial</li>
-            <li>RRHH</li>
-          </ul>
-          <p class="texto-justificado">
-            Nuestra solución Administrativa Financiera Status, permite que el empresario tome el control de su empresa sin importar el tiempo de operar. El empresario podrá disponer de información inmediata para la toma de decisiones y podrá delegar en la tecnología y controlar su recurso humano para dedicar su experiencia a desarrollar nuevas formas de rentabilizar su operación, teniendo de forma clara todo el flujo financiero de su negocio.
+    
+   <section id="servicios">
+    <h2 class="titulo-seccion">NUESTRAS SOLUCIONES</h2>
+    <div class="fila">
+      <div class="card__soluciones">
+        <figure>
+          <img src="/images/status.jpg" alt="" srcset="">
+        </figure>
+        <div class="contentido_soluciones">
+          <h3>STATUS BUSINESS</h3>
+          <p> Nuestra solución Administrativa Financiera Status, permite que el empresario tome el control de su empresa sin importar el tiempo de operar. El empresario podrá disponer de información inmediata para la toma de decisiones y podrá delegar en la tecnología y controlar su recurso humano para dedicar su experiencia a desarrollar nuevas formas de rentabilizar su operación, teniendo de forma clara todo el flujo financiero de su negocio.
             <hr>
-            <a href="#">Status Cash & Flow (SCF)®</a> <hr> <a href="#">Status ERP(SERP)®</a>
-          </p>
-        </div>
-        <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-code"></i></span>
-          <h4>WMS</h4>
-          <hr />
-          <ul class="servicio-tag">
-            <li>Redis</li>
-            <li>Route</li>
-            <li>Truck Load</li>
-          </ul>
-          <p class="texto-justificado">
-            Uno de los desafíos de la transformación digital de las empresas salvadoreñas es poder tomar los procesos logísticos y adecuarlos a los cambios que los mercados van exigiendo, esto sin afectar el valor de los bienes que el consumidor demanda. Para superar este desafío, H2C pone a disposición una serie de herramientas ya probadas en su efectividad en el mercado de Centro América y República Dominicana.
-            <hr>
-            <a href="#">Redis®</a> <hr> <a href="#">Redis Truck Load®</a> <hr><a href="#">Redis Route®</a>
-          </p>
-        </div>
-        <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-tower-cell"></i></span>
-          <h4>INFRAESTRUCTURA</h4>
-          <hr />
-          <ul class="servicio-tag">
-            <li>Redes</li>
-            <li>Potencia</li>
-            <li>Soporte</li>
-          </ul>
-          <p class="texto-justificado">
-            H2C El Salvador dispone de una amplia experiencia en la gestión de redes físicas LAN, MAN y WAN, así como en soluciones de manejo de energía eléctrica y climatización para centros de datos y aplicaciones específicas.Contamos con las alianzas para lograr que su data center sea diseñado bajo estándares del <a href="#">Tier Institute ®</a>  y que su ejecución sea realizada por los mejores profesionales especializados de la región.Además, proveemos servicios de diagnóstico de redes físicas y lógicas, tomando los proyectos desde un plano a escala hasta su ejecución, siempre apegados a los mejores productos de la industria.
-
-          </p>
+            <a href="#">Status Cash & Flow (SCF)®</a>  <a href="#">Status ERP(SERP)®</a></p>
+          <a href="#">Leer mas</a>
         </div>
       </div>
-      <div class="fila">
-        <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-code"></i></span>
-          <h4>COMUNICACIÓN 3.0</h4>
-          <hr />
-          <ul class="servicio-tag">
-            <li>Caja Sugerencia</li>
-            <li></li>
-            <li>Contact Center</li>
-          </ul>
-          <p class="texto-justificado">
-            La exigencia de comunicación, ha hecho que los comercios busquen controlar el “derecho de respuesta” ante clientes exigentes, por esta razón H2C El Salvador, pone al servicio de las empresas, sin importar el tamaño de las mismas,  diferentes herramientas que permitirán orientar las políticas y estrategias de comunicación hasta llevarlas a un sentido 3.0 práctico y real.
-            <hr>
-            <a href="#">Sugg Box®</a> <hr> <a href="#">SMS to all®</a>
-          </p>
+      <div class="card__soluciones">
+        <figure>
+          <img src="/images/wms.jpg" alt="" srcset="">
+        </figure>
+        <div class="contentido_soluciones">
+          <h3>WMS</h3>
+          <p> Uno de los desafíos de la transformación digital de las empresas salvadoreñas es poder tomar los procesos logísticos y adecuarlos a los cambios que los mercados van exigiendo, esto sin afectar el valor de los bienes que el consumidor demanda. Para superar este desafío, H2C pone a disposición una serie de herramientas ya probadas en su efectividad en el mercado de Centro América y República Dominicana.  
+          <hr>
+            <a href="#">Redis®</a>  <a href="#">Redis Truck Load®</a> <a href="#">Redis Route®</a></p>
+          <a href="#">Leer mas</a>
         </div>
-        <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-building-columns"></i></i></span>
-          <h4>H2C BANKERS AND FINANCERS</h4>
-          <hr />
-          <ul class="servicio-tag">
-            <li>DLF</li>
-            <li>Kioscos</li>
-            <li>POS</li>
-          </ul>
-          <p class="texto-justificado">
-            La realidad de la vertical de Bancos y Financieras tiene una oportunidad de automatización y control que nos ha hecho desarrollar alianzas con grandes de la industria y que ya conocen la naturaleza operativa de la banca regulada y no regulada de El Salvador, encontrando en las siguientes solucione.
+      </div>
+      <div class="card__soluciones">
+        <figure>
+          <img src="/images/redes.jpg" alt="" srcset="">
+        </figure>
+        <div class="contentido_soluciones">
+          <h3>INFRAESTRUCTURA</h3>
+          <p>H2C El Salvador dispone de una amplia experiencia en la gestión de redes físicas LAN, MAN y WAN, así como en soluciones de manejo de energía eléctrica y climatización para centros de datos y aplicaciones específicas.Contamos con las alianzas para lograr que su data center sea diseñado bajo estándares del Tier Institute®  y que su ejecución sea realizada por los mejores profesionales especializados de la región.Además, proveemos servicios de diagnóstico de redes físicas y lógicas, tomando los proyectos desde un plano a escala hasta su ejecución, siempre apegados a los mejores productos de la industria.</p>
+          <hr>
+          <a href="#">Leer mas</a>
+        </div>
+      </div>
+    </div>
+    <div class="fila">
+      <div class="card__soluciones">
+        <figure>
+          <img src="/images/redessociales.jpg" alt="" srcset="">
+        </figure>
+        <div class="contentido_soluciones">
+          <h3>COMUNICACIÓN 3.0</h3>
+          <p>La exigencia de comunicación, ha hecho que los comercios busquen controlar el “derecho de respuesta” ante clientes exigentes, por esta razón H2C El Salvador, pone al servicio de las empresas, sin importar el tamaño de las mismas,  diferentes herramientas que permitirán orientar las políticas y estrategias de comunicación hasta llevarlas a un sentido 3.0 práctico y real.
+            <hr>
+            <a href="#">Sugg Box®</a>  <a href="#">SMS to all®</a></p>
+          <a href="#">Leer mas</a>
+        </div>
+      </div>
+      <div class="card__soluciones">
+        <figure>
+          <img src="/images/DLF.jpg" alt="" srcset="">
+        </figure>
+        <div class="contentido_soluciones">
+          <h3>H2C BANKERS AND FINANCERS</h3>
+          <p>La realidad de la vertical de Bancos y Financieras tiene una oportunidad de automatización y control que nos ha hecho desarrollar alianzas con grandes de la industria y que ya conocen la naturaleza operativa de la banca regulada y no regulada de El Salvador, encontrando en las siguientes solucione.
             <hr>
             <a href="#">DLF Prevención de Lavado de Dinero®</a>
             <hr>
-            <a href="#">H2C FINANCIL KIOSKS</a> <hr> <a href="#">H2C BANKING CORE</a>
-          </p>
-        </div>
-        <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-code"></i></span>
-          <h4>CIBERSEGURIDAD</h4>
-          <hr />
-          <ul class="servicio-tag">
-            <li>Monitoreo</li>
-            <li>Ransomware</li>
-            <li>Auditorias</li>
-          </ul>
-          <p class="texto-justificado">
-            PREVENCION-DETECCION-REACCION son las variables que pueden hacer la diferencia entre que un ataque cibernético sea exitoso para el hacker o la empresa pueda aplicar las herramientas necesarias para contrarrestar no solo la acción delictiva, sino anticipar y mostrarse lo menos vulnerable posible ante elementos externos e internos.La situación de riesgo informático siempre ha planteado a las empresas un desafío y alto costo en su implementación y en su operación.H2C presta diversos servicios que van orientados a democratizar soluciones de ciberseguridad para las empresas, sin importar su tamaño operativo, viendo cada activo empresarial como vital para la operación segura.
-
-          </p>
+            <a href="#">H2C FINANCIAL KIOSKS</a>  <a href="#">H2C BANKING CORE</a></p>
+          <a href="#">Leer mas</a>
         </div>
       </div>
-    </section>
+      <div class="card__soluciones">
+        <figure>
+          <img src="/images/ciberseguridad.jpg" alt="" srcset="">
+        </figure>
+        <div class="contentido_soluciones">
+          <h3>CIBERSEGURIDAD</h3>
+          <p>PREVENCION-DETECCION-REACCION son las variables que pueden hacer la diferencia entre que un ataque cibernético sea exitoso para el hacker o la empresa pueda aplicar las herramientas necesarias para contrarrestar no solo la acción delictiva, sino anticipar y mostrarse lo menos vulnerable posible ante elementos externos e internos.La situación de riesgo informático siempre ha planteado a las empresas un desafío y alto costo en su implementación y en su operación.H2C presta diversos servicios que van orientados a democratizar soluciones de ciberseguridad para las empresas, sin importar su tamaño operativo, viendo cada activo empresarial como vital para la operación segura.</p>
+          <hr>
+          <a href="#">Leer mas</a>
+        </div>
+      </div>
+    </div>
+   </section>
     <!-- SESSION STATUSERP -->
-    <section class="contenedor-skills" id="statuserp">
-      <div class="status__texto">
-        <h1 class="title">La mejor <span class="title__active">Experiencia Digital</span></h1>
-        <p class="copy">Nos encargamos de lllevar tu idea al <span class="copy__active"></span> Sin limites</p>
-        <a href="#" class="cta">Agenda una Demo</a>
-      </div>
-      <div class="muckup">
-        <img src="/images/fondoStatus.jpg" class="mockup_img" alt="">
+    <section class="contenedor-status" id="statuserp">
+      <div class="slider_contenedor">
+        <section class="contenido-slider">
+          
+          <div>
+            <h1>Status Cash Flow(SCF)</h1>
+            <h2>Es una plataforma (ERP) Enterprise Resource Planning, en la nube que integra todos los sectores implicados de su empresa, desde que sus vendedores cotizan hasta convertirse en una venta, pasando por cuentas por cobrar, alimentando y descargando Bancos, gestionando Inventarios, Compras, Contabilidad y mucho más.</h2>
+            <a href="#">Contact Us</a>
+          </div>
+            <img src="/images/fondoStatus.jpg" alt="" srcset="">
+          
+        </section>
+        <section class="contenido-slider">
+          <div>
+            <h1>Status ERP(SERP)</h1>
+            <h2>Es una plataforma (ERP) Enterprise Resource Planning, en la nube que integra todos los sectores implicados de su empresa, desde que sus vendedores cotizan hasta convertirse en una venta, pasando por cuentas por cobrar, alimentando y descargando Bancos, gestionando Inventarios, Compras, Contabilidad y mucho más.</h2>
+            <a href="#">Contact Us</a>
+          </div>
+            <img src="/images/fondoStatus.jpg" alt="" srcset="">
+          
+        </section>
+        <section class="contenido-slider">
+          <div>
+            <h1>Status RRHH(SRH)</h1>
+            <h2>Es una plataforma (ERP) Enterprise Resource Planning, en la nube que integra todos los sectores implicados de su empresa, desde que sus vendedores cotizan hasta convertirse en una venta, pasando por cuentas por cobrar, alimentando y descargando Bancos, gestionando Inventarios, Compras, Contabilidad y mucho más.</h2>
+            <a href="#">Contact Us</a>
+          </div>
+            <img src="/images/fondoStatus.jpg" alt="" srcset="">
+          
+        </section>
+        <section class="contenido-slider">
+          <div>
+            <h1>Status Cash Flow(SCF)</h1>
+            <h2>Es una plataforma (ERP) Enterprise Resource Planning, en la nube que integra todos los sectores implicados de su empresa, desde que sus vendedores cotizan hasta convertirse en una venta, pasando por cuentas por cobrar, alimentando y descargando Bancos, gestionando Inventarios, Compras, Contabilidad y mucho más.</h2>
+            <a href="#">Contact Us</a>
+          </div>
+            <img src="/images/fondoStatus.jpg" alt="" srcset="">
+          
+        </section>
       </div>
       
     </section>
@@ -293,5 +310,6 @@
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
       </div>
     </footer>
+    <script src="/js/main.js"></script>
   </body>
 </html>
