@@ -1,5 +1,16 @@
 /* agregamos fuente que vamos a utilizar */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
+
+:root{
+  --gold1:#F4BD76;
+  --gold2:#F6CD8F;
+  --gray:#ffffff80;
+  --gray2:#f7d9d990;
+  --black1:#1A1B1F;
+  --black2:#30553B;
+  --shadows:0 8px 8px;
+  --color_shadow:#00000033;
+}
 * {
   margin: 0;
   padding: 0;
@@ -253,15 +264,17 @@ html {
 }
 /* SECCION DE HABILIDADES */
 .contenedor-skills {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/logo.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  padding: 300px 0;
-  height: 100vh;
-  text-align: center;
+width: 100%;
+  background: linear-gradient(180deg,#30353B 0%,#1A1B1F 100%);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0;
+}
+.mockup{
+ padding: 25px;
+  border: 1px solid red;
+  
 }
 .contenedor-skills .skill {
   max-width: 600px;
